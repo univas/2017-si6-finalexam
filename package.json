@@ -1,0 +1,14 @@
+{
+  "name": "2017-si6-finalexam",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": ""
+  },
+  "author": "Univas",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}

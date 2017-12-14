@@ -1,0 +1,45 @@
+[
+  {
+    "code": "2017001",
+    "items": [
+      {
+        "description": "Pizza Palmito Especial",
+        "price": 34.80
+      },
+      {
+        "description": "Suco de Abacaxi com Manjericão",
+        "price": 8.00
+      },
+      {
+        "description": "Chocolate",
+        "price": 2.50
+      }
+    ]
+  },
+  {
+    "code": "2017002",
+    "items": [
+      {
+        "description": "Picanha na pedra",
+        "price": 89.90
+      },
+      {
+        "description": "Arroz branco",
+        "price": 8.50
+      },
+      {
+        "description": "Banana Flanbanda",
+        "price": 6.90
+      }
+    ]
+  },
+  {
+    "code": "2017003",
+    "items": [
+      {
+        "description": "Filé de Truta",
+        "price": 63.00
+      }
+    ]
+  }
+]
