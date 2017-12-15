@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+<!--  -->
+<aside>
+    <h1>Pedido</h1>
+
+    <form action="/order" method="get">
+        <div>
+            <label for="order">Código do Pedido</label>
+
+            <input type="nunber" name="order">
+        </div>
+        <!--  -->
+        <input type="submit" value="order">
+    </form>
+
+       <% if(order) { %>
+        <section>
+        <ul>
+<!-- pedido 01 -->
+            <li id="pedido"> <%=order.item.description%><%=order.item.price%></li>
+<!-- pedido 02 -->
+            <li id="pedido"> <%=order.description%><%=order.price%></li> 
+<!-- teste 10% -->
+             <li id="10% do garson"> <%=order.price*0.1%>
+<!-- teste 10%total  -->
+                <li id="10% do garson"><%let data=order.price[i]%><%=price.data[i]%> anos</p>
+
+        </ul>
+
+
+            <!-- <% if (true) { 
+                today = new Date();
+                year = today.getYear() + 1900;
+                month = today.getMonth() +1;
+                day = today.getDate();                
+            } %>
+            <p id="age"><%let date=employee.dateOfBirth.split('/')%><%=year-date[0]%> anos</p> -->
+
+    <% } else { %>
+        <h2> order not found </h2>
+    <% } %>
+
+    <!-- <section>
+        <h2>2017001</h2>
+        <ul>
+            <li>Pizza Palmito Especial, R$ 34.80</li>
+            <li>Suco de Abacaxi com Manjericão, R$ 8.00</li>
+            <li>Chocolate, R$ 2.50</li>
+            <li>Sub total, R$ 54.30</li>
+            <li>10%, R$ 5.43</li>
+            <li>Total: R$ 59.73</li>
+        </ul>
+    </section> -->
+</aside>
+
+</body>
+</html>
