@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<aside>
+    <h1>Pedido</h1>
+
+    <form action="/consult" method="GET">
+        <div>
+            <label for="orderIds"> Códe </label>
+            <input type="text" name="orderId" required>
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
+
+    <% if(submitted==false) { %>
+        <h2>Informe um codigo de comanda acima!</h2>
+    <% } else { %>
+        <h2>   <%=items.code%></h2>
+        <ul>
+               <%var result = 0%>
+
+            <%for(i=0; i < items.items.length; i++){%>
+
+                <li><%=items.items[i].description%>, R$ <%=items.items[i].price%></li>
+            <% 
+
+            result += items.items[i].price } %> 
+            
+            
+        <li>Sub total, R$ <%=result.toFixed(2)%></li>  
+        <li>10%, R$ <%= (result*0.1).toFixed(2)%></li> 
+        <li>Total, R$ <%= ((result*0.1)+result).toFixed(2)%></li>
+    </ul>
+    
+    <% } %>
+</aside>
+
+</body>
+</html>
